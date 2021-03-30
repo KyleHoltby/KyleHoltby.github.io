@@ -6,7 +6,7 @@ body,
 html {
   background-image: url("./cool-background.png");
   overflow-y: auto;
-
+  width: 100%;
   height: 100%;
   margin: 0em;
 
@@ -19,10 +19,11 @@ html {
   background-color: #ffffffcc;
   text-align: center;
   border-radius: 5em;
+  padding: 0em 2em 0em 2em;
   margin: 2em 2em 0em 2em;
 }
 
-#navbar button {
+#navbar a button {
   background-color: #ffffff00;
   color: #000000;
 
@@ -38,7 +39,7 @@ html {
   outline: none;
 }
 
-#navbar button:hover {
+#navbar a button:hover {
   background-color: #000000;
   color: #ffffff;
 }
@@ -52,14 +53,23 @@ html {
 #content {
   background-color: #ffffffcc;
   border-radius: 1em;
+  padding-bottom: 1vh;
   margin: 5%;
-  box-shadow: 0px 1px 5px #00000075;
+  box-shadow: 0px 1px 25px #00000075;
 }
 
 #content h1 {
   text-align: center;
-  font-size: 4vw;
+  font-size: 5vw;
   padding-top: 0.75em;
+}
+
+#content h2 {
+  font-size: 3vw;
+}
+
+#content h3 {
+  font-size: 2vw;
 }
 
 #content hr {
@@ -69,6 +79,35 @@ html {
   background-image: linear-gradient(90deg, #00000000, #000000ff, #00000000);
 }
 
+#text {
+  margin: 1vh 3vw 1vh 3vw;
+}
+
 #extra {
+  background-color: #ffffff00;
+  text-align: center;
+  padding: 0em 2em 0em 2em;
+  margin: 2em;
+}
+
+#extra button {
   background-color: #ffffffcc;
+  color: #000000;
+
+  font-weight: bolder;
+  font-size: 1.5em;
+
+  border-radius: 5em;
+  margin: 0em -0.25em 0em -0.25em;
+  padding: 2vh 3vw;
+
+  transition-duration: 0.2s;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#extra button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
