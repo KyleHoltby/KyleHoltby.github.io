@@ -27,16 +27,37 @@ html {
   background-color: #ffffff00;
   color: #000000;
 
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bolder;
 
-  margin: 0em -0.25em 0em -0.25em;
+  margin: 0em;
   padding: 2vh 3vw;
 
   transition-duration: 0.2s;
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar a button {
+    font-size: 1.5em;
+    padding: 1.5vh 2.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar a button {
+    font-size: 0.75em;
+    padding: 1vh 2vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #navbar a button {
+    font-size: 0.5em;
+    padding: 1vh 2vw;
+  }
 }
 
 #navbar a button:hover {
